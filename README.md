@@ -41,9 +41,291 @@ while True:
         if p_item[1]<=salary:
             shopping_list.append(p_item)
             salary-=p_item[1]
-            print(f'Added {p_item} into shopping cart,your current balance is {salary}')
+            print(f'Added {p_item} into shopping cart,your current balance is {salary}')users = []
+try:
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+except FileNotFoundError:
+    os.system('touch users.txt')
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+finally:users = []
+try:
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+except FileNotFoundError:
+    os.system('touch users.txt')users = []
+try:
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+except FileNotFoundError:
+    os.system('touch users.txt')
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+finally:
+    print("Users data loaded!\n", end='')
+    with open('users.txt','w')as f:
+        f.write('')
+
+print(users_data, end='')
+
+
+def check_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    return (info in users_data_list)
+
+
+users_dt_list = users_data.split('\n')
+
+users = []
+try:
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+except FileNotFoundError:
+    os.system('touch users.txt')
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+finally:
+    print("Users data loaded!\n", end='')
+    with open('users.txt','w')as f:
+        f.write('')
+
+print(users_data, end='')
+
+
+def check_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    return (info in users_data_list)
+
+
+users_dt_list = users_data.split('\n')
+
+
+print(check_user_info(users_dt_list, 'azatai3', 2019, 'superadmin'))
+
+
+def add_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    users_data_list.append(info)
+    return users_data_list
+
+
+def check_info(user_data_list, user_name):
+    for each in user_data_list:
+        if user_name in each:
+            return users_dt_list.index(each)
+    else:
+        return 100
+
+
+def update_user_info(user_data_list, user_name, update_password, update_role):
+    index = check_info(user_data_list, user_name)
+    if index != 100:
+        new_info = f"{user_name} {update_password} {update_role}"
+        user_data_list[index] = new_info
+    return user_data_list
+
+
+print('azatai' in 'azatai 2019 superadmin')
+dt_updated = update_user_info(users_dt_list, 'azatai', 'elel34', 'staff')
+
+with open('users.txt', 'a+') as f:
+    for each in dt_updated:
+        f.write(each)
+
+print(check_user_info(users_dt_list, 'azatai3', 2019, 'superadmin'))
+
+
+def add_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    users_data_list.append(info)
+    return users_data_list
+
+
+def check_info(user_data_list, user_name):
+    for each in user_data_list:
+        if user_name in each:
+            return users_dt_list.index(each)
+    else:
+        return 100
+
+
+def update_user_info(user_data_list, user_name, update_password, update_role):
+    index = check_info(user_data_list, user_name)
+    if index != 100:
+        new_info = f"{user_name} {update_password} {update_role}"
+        user_data_list[index] = new_info
+    return user_data_list
+
+
+print('azatai' in 'azatai 2019 superadmin')
+dt_updated = update_user_info(users_dt_list, 'azatai', 'elel34', 'staff')
+
+with open('users.txt', 'a+') as f:
+    for each in dt_updated:
+        f.write(each)
+
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+finally:
+    print("Users data loaded!\n", end='')
+    with open('users.txt','w')as f:
+        f.write('')
+
+print(users_data, end='')
+
+
+def check_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    return (info in users_data_list)
+
+
+users_dt_list = users_data.split('\n')
+
+
+print(check_user_info(users_dt_list, 'azatai3', 2019, 'superadmin'))
+
+
+def add_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    users_data_list.append(info)
+    return users_data_list
+
+
+def check_info(user_data_list, user_name):
+    for each in user_data_list:
+        if user_name in each:
+            return users_dt_list.index(each)
+    else:
+        return 100
+
+
+def update_user_info(user_data_list, user_name, update_password, update_role):
+    index = check_info(user_data_list, user_name)
+    if index != 100:
+        new_info = f"{user_name} {update_password} {update_role}"
+        user_data_list[index] = new_info
+    return user_data_list
+
+
+print('azatai' in 'azatai 2019 superadmin')
+dt_updated = update_user_info(users_dt_list, 'azatai', 'elel34', 'staff')
+
+with open('users.txt', 'a+') as f:
+    for each in dt_updated:
+        f.write(each)
+
+    print("Users data loaded!\n", end='')
+    with open('users.txt','w')as f:
+        f.write('')
+
+print(users_data, end='')
+
+
+def check_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    return (info in users_data_list)
+
+
+users_dt_list = users_data.split('\n')
+
+
+print(check_user_info(users_dt_list, 'azatai3', 2019, 'superadmin'))
+
+
+def add_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    users_data_list.append(info)
+    return users_data_list
+
+
+def check_info(user_data_list, user_name):
+    for each in user_data_list:
+        if user_name in each:
+            return users_dt_list.index(each)
+    else:
+        return 100
+
+
+def update_user_info(user_data_list, user_name, update_password, update_role):
+    index = check_info(user_data_list, user_name)
+    if index != 100:
+        new_info = f"{user_name} {update_password} {update_role}"
+        user_data_list[index] = new_info
+    return user_data_list
+
+
+print('azatai' in 'azatai 2019 superadmin')
+dt_updated = update_user_info(users_dt_list, 'azatai', 'elel34', 'staff')
+
+with open('users.txt', 'a+') as f:
+    for each in dt_updated:
+        f.write(each)
+
             break
         else:
             print(f'Sorry,only{salary} left on your credit.You can"t buy')
     else:
          print(f'Product {user_choice} does not exict Dude') 
+         
+         
+         
+         
+         
+         
+         users = []
+try:
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+except FileNotFoundError:
+    os.system('touch users.txt')
+    with open('users.txt', 'r') as f:
+        users_data = f.read()
+finally:
+    print("Users data loaded!\n", end='')
+    with open('users.txt','w')as f:
+        f.write('')
+
+print(users_data, end='')
+
+
+def check_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    return (info in users_data_list)
+
+
+users_dt_list = users_data.split('\n')
+
+
+print(check_user_info(users_dt_list, 'azatai3', 2019, 'superadmin'))
+
+
+def add_user_info(users_data_list, user_name, user_password, user_role):
+    info = f"{user_name} {user_password} {user_role}"
+    users_data_list.append(info)
+    return users_data_list
+
+
+def check_info(user_data_list, user_name):
+    for each in user_data_list:
+        if user_name in each:
+            return users_dt_list.index(each)
+    else:
+        return 100
+
+
+def update_user_info(user_data_list, user_name, update_password, update_role):
+    index = check_info(user_data_list, user_name)
+    if index != 100:
+        new_info = f"{user_name} {update_password} {update_role}"
+        user_data_list[index] = new_info
+    return user_data_list
+
+
+print('azatai' in 'azatai 2019 superadmin')
+dt_updated = update_user_info(users_dt_list, 'azatai', 'elel34', 'staff')
+
+with open('users.txt', 'a+') as f:
+    for each in dt_updated:
+        f.write(each)
+
