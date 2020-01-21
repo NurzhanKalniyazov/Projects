@@ -19,7 +19,384 @@ def A():
   print('{}+{}j'.format((k*math.cos(x)),(k*math.sin(x))))
 
 
+T=input('Шифрланатын созди енгизиниз?')
+G=input('Гаммалау килтин енгизиниз?')
+b=[]
+c=[]
+for i in T:
+    if i=='А' or i =='а':
+        b.append(1)
+    elif i=='Б' or i == 'б':
+        b.append(2)
+    elif i=='В' or i == 'в':
+        b.append(3)
+    elif i=='Г' or i == 'г':
+        b.append(4)
+    elif i=='Д' or i == 'д':
+        b.append(5)
+    elif i=='Е' or i == 'е':
+        b.append(6)
+    elif i=='Ё' or i == 'ё':
+        b.append(7)
+    elif i=='Ж' or i == 'ж':
+        b.append(8)
+    elif i=='З' or i == 'з':
+        b.append(9)
+    elif i=='И' or i == 'и':
+        b.append(10)
+    elif i=='Й' or i == 'й':
+        b.append(11)
+    elif i=='К' or i == 'к':
+        b.append(12)
+    elif i=='Л' or i == 'л':
+        b.append(13)
+    elif i=='М' or i == 'м':
+        b.append(14)
+    elif i=='Н' or i == 'н':
+        b.append(15)
+    elif i=='О' or i == 'о':
+        b.append(16)    
+    elif i=='П' or i == 'п':
+        b.append(17)
+    elif i=='Р' or i == 'р':
+        b.append(18)
+    elif i=='С' or i == 'с':
+        b.append(19)
+    elif i=='Т' or i == 'т':
+        b.append(20)
+    elif i=='У' or i == 'у':
+        b.append(21)
+    elif i=='Ф' or i == 'ф':
+        b.append(22)
+    elif i=='Х' or i == 'х':
+        b.append(23)
+    elif i=='Ц' or i == 'ц':
+        b.append(24)
+    elif i=='Ч' or i == 'ч':
+        b.append(25)
+    elif i=='Ш' or i == 'ш':
+        b.append(26)
+    elif i=='Щ' or i == 'щ':
+        b.append(27)
+    elif i=='Ъ' or i == 'ъ':
+        b.append(28)
+    elif i=='Ы' or i == 'ы':
+        b.append(29)
+    elif i=='Ь' or i == 'ь':
+        b.append(30)
+    elif i=='Э' or i == 'э':
+        b.append(31)
+    elif i=='Ю' or i == 'ю':
+        b.append(32)
+    elif i=='Я' or i == 'я':
+        b.append(33)
+    elif i==' ':
+        b.append(34)
+    elif i=='0':
+        b.append(35)
+    elif i=='1':
+        b.append(36)
+    elif i=='2':
+        b.append(37)    
+    elif i=='3':
+        b.append(38)
+    elif i=='4':
+        b.append(39)
+    elif i=='5':
+        b.append(40)
+    elif i=='6':
+        b.append(41)
+    elif i=='7':
+        b.append(42)
+    elif i=='8':
+        b.append(43)
+    elif i=='9':
+        b.append(44)
+print("T = ",b)
+for j in G:
+    if j=='А' or j =='а':
+        c.append(1)
+    elif j=='Б' or j == 'б':
+        c.append(2)
+    elif j=='В' or j == 'в':
+        c.append(3)
+    elif j=='Г' or j == 'г':
+        c.append(4)
+    elif j=='Д' or j == 'д':
+        c.append(5)
+    elif j=='Е' or j == 'е':
+        c.append(6)
+    elif j=='Ё' or j == 'ё':
+        c.append(7)
+    elif j=='Ж' or j == 'ж':
+        c.append(8)
+    elif j=='З' or j == 'з':
+        c.append(9)
+    elif j=='И' or j == 'и':
+        c.append(10)
+    elif j=='Й' or j == 'й':
+        c.append(11)
+    elif j=='К' or j == 'к':
+        c.append(12)
+    elif j=='Л' or j == 'л':
+        c.append(13)
+    elif j=='М' or j == 'м':
+        c.append(14)
+    elif j=='Н' or j == 'н':
+        c.append(15)
+    elif j=='О' or j == 'о':
+        c.append(16)    
+    elif j=='П' or j == 'п':
+        c.append(17)
+    elif j=='Р' or j == 'р':
+        c.append(18)
+    elif j=='С' or j == 'с':
+        c.append(19)
+    elif j=='Т' or j == 'т':
+        c.append(20)
+    elif j=='У' or j == 'у':
+        c.append(21)
+    elif j=='Ф' or j == 'ф':
+        c.append(22)
+    elif j=='Х' or j == 'х':
+        c.append(23)
+    elif j=='Ц' or j == 'ц':
+        c.append(24)
+    elif j=='Ч' or j == 'ч':
+        c.append(25)
+    elif j=='Ш' or j == 'ш':
+        c.append(26)
+    elif j=='Щ' or j == 'щ':
+        c.append(27)
+    elif j=='Ъ' or j == 'ъ':
+        c.append(28)
+    elif j=='Ы' or j == 'ы':
+        c.append(29)
+    elif j=='Ь' or j == 'ь':
+        c.append(30)
+    elif j=='Э' or j == 'э':
+        c.append(31)
+    elif j=='Ю' or j == 'ю':
+        c.append(32)
+    elif j=='Я' or j == 'я':
+        c.append(33)
+    elif j==' ':
+        c.append(34)
+    elif j=='0':
+        c.append(35)
+    elif j=='1':
+        c.append(36)
+    elif j=='2':
+        c.append(37)    
+    elif j=='3':
+        c.append(38)
+    elif j=='4':
+        c.append(39)
+    elif j=='5':
+        c.append(40)
+    elif j=='6':
+        c.append(41)
+    elif j=='7':
+        c.append(42)
+    elif j=='8':
+        c.append(43)
+    elif j=='9':
+        c.append(44)
+if len(G)<len(T):
+       for j in range(0,len(T)-len(G)):
+         if T[j]=='А' or T[j] =='а':
+            c.append(1)
+         elif T[j]=='Б' or T[j] == 'б':
+            c.append(2)
+         elif T[j]=='В' or T[j] == 'в':
+            c.append(3)
+         elif T[j]=='Г' or T[j] == 'г':
+            c.append(4)
+         elif T[j]=='Д' or T[j] == 'д':
+            c.append(5)
+         elif T[j]=='Е' or T[j] == 'е':
+            c.append(6)
+         elif T[j]=='Ё' or T[j] == 'ё':
+            c.append(7)
+         elif T[j]=='Ж' or T[j] == 'ж':
+            c.append(8)
+         elif T[j]=='З' or T[j] == 'з':
+            c.append(9)
+         elif T[j]=='И' or T[j] == 'и':
+            c.append(10)
+         elif T[j]=='Й' or T[j] == 'й':
+            c.append(11)
+         elif T[j]=='К' or T[j] == 'к':
+            c.append(12)
+         elif T[j]=='Л' or T[j] == 'л':
+            c.append(13)
+         elif T[j]=='М' or T[j] == 'м':
+            c.append(14)
+         elif T[j]=='Н' or T[j] == 'н':
+            c.append(15)
+         elif T[j]=='О' or T[j] == 'о':
+            c.append(16)    
+         elif T[j]=='П' or T[j] == 'п':
+            c.append(17)
+         elif T[j]=='Р' or T[j] == 'р':
+            c.append(18)
+         elif T[j]=='С' or T[j] == 'с':
+            c.append(19)
+         elif T[j]=='Т' or T[j] == 'т':
+            c.append(20)
+         elif T[j]=='У' or T[j] == 'у':
+            c.append(21)
+         elif T[j]=='Ф' or T[j] == 'ф':
+            c.append(22)
+         elif T[j]=='Х' or T[j] == 'х':
+            c.append(23)
+         elif T[j]=='Ц' or T[j] == 'ц':
+            c.append(24)
+         elif T[j]=='Ч' or T[j] == 'ч':
+            c.append(25)
+         elif T[j]=='Ш' or T[j] == 'ш':
+            c.append(26)
+         elif T[j]=='Щ' or T[j] == 'щ':
+            c.append(27)
+         elif T[j]=='Ъ' or T[j] == 'ъ':
+            c.append(28)
+         elif T[j]=='Ы' or T[j] == 'ы':
+            c.append(29)
+         elif T[j]=='Ь' or T[j] == 'ь':
+            c.append(30)
+         elif T[j]=='Э' or T[j] == 'э':
+            c.append(31)
+         elif T[j]=='Ю' or T[j] == 'ю':
+            c.append(32)
+         elif T[j]=='Я' or T[j] == 'я':
+            c.append(33)
+         elif T[j]==' ':
+            c.append(34)
+         elif T[j]=='0':
+            c.append(35)
+         elif T[j]=='1':
+             c.append(36)
+         elif T[j]=='2':
+             c.append(37)    
+         elif T[j]=='3':
+             c.append(38)
+         elif T[j]=='4':
+             c.append(39)
+         elif T[j]=='5':
+            c.append(40)
+         elif T[j]=='6':
+            c.append(41)
+         elif T[j]=='7':
+            c.append(42)
+         elif T[j]=='8':
+            c.append(43)
+         elif T[j]=='9':
+            c.append(44)
 
+print('G = ', c)
+q=[]
+for i in range(0,len(b)):
+    s=b[i]+c[i]
+    q.append(s)
+print("T + G =",q)
+e=[]
+for i in range(0,len(q)):
+    z=q[i]%44
+    e.append(z)
+print('mod N',e)
+print('0 -> N',e)
+l=[]
+for i in range(0,len(e)):
+         if e[i]==1:
+            l.append('A')
+         elif e[i]==2:
+            l.append('Б')
+         elif e[i]==3:
+            l.append('В')
+         elif e[i]==4:
+            l.append('Г')
+         elif e[i]==5:
+            l.append('Д')
+         elif e[i]==6:
+            l.append('Е')
+         elif e[i]==7:
+            l.append('Ё')
+         elif e[i]==8:
+            l.append('Ж')
+         elif e[i]==9:
+            l.append('З')
+         elif e[i]==10:
+            l.append('И')
+         elif e[i]==11:
+            l.append('Й')
+         elif e[i]==12:
+            l.append('К')
+         elif e[i]==13:
+            l.append('Л')
+         elif e[i]==14:
+            l.append('М')
+         elif e[i]==15:
+            l.append('Н')
+         elif e[i]==16:
+            l.append('О')    
+         elif e[i]==17:
+            l.append('П')
+         elif e[i]==18:
+            l.append('Р')
+         elif e[i]==19:
+            l.append('С')
+         elif e[i]==20:
+            l.append('Т')
+         elif e[i]==21:
+            l.append('У')
+         elif e[i]==22:
+            l.append('Ф')
+         elif e[i]==23:
+            l.append('Х')
+         elif e[i]==24:
+            l.append('Ц')
+         elif e[i]==25:
+            l.append('Ч')
+         elif e[i]==26:
+            l.append('Ш')
+         elif e[i]==27:
+            l.append('Щ')
+         elif e[i]==28:
+            l.append('Ъ')
+         elif e[i]==29:
+            l.append('Ы')
+         elif e[i]==30:
+            l.append('Ь')
+         elif e[i]==31:
+            l.append('Э')
+         elif e[i]==32:
+            l.append('Ю')
+         elif e[i]==33:
+            l.append('Я')
+         elif e[i]==34:
+            l.append(' ')
+         elif e[i]==35:
+            l.append('0')
+         elif e[i]==36:
+             l.append('1')
+         elif e[i]==37:
+             l.append('2')    
+         elif e[i]==38:
+             l.append('3')
+         elif e[i]==39:
+             l.append('4')
+         elif e[i]==40:
+            l.append('5')
+         elif e[i]==41:
+            l.append('6')
+         elif e[i]==42:
+            l.append('7')
+         elif e[i]==43:
+            l.append('8')
+         elif e[i]==44:
+            l.append('9')
+print('Шифрланган соз',l)            
+        
 
 
 
